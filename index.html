@@ -1,85 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <link rel="icon" href="CULT.jpg">
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            overflow: hidden;
+        }
 
-<!doctype html>
-<html id="seattle">
+        /* Positioning the GIFs */
+        .gif {
+            position: absolute;
+            width: 100px; /* Adjust size as needed */
+            height: auto;
+        }
 
-<head id="sanfrancisco">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16762409096"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'AW-16762409096');
-  </script>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title id="losangeles">CULT</title>
-  <link rel="icon" href="/CULT.jpg">
+        /* Middle */
+        #middle {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Top-left */
+        #top-left {
+            top: 10px;
+            left: 10px;
+        }
+
+        /* Bottom-right */
+        #bottom-right {
+            bottom: 10px;
+            right: 10px;
+        }
+    </style>
 </head>
+<body>
 
-<body id="phoenix">
-  <div id="denver">
-    <div id="newyork">
-      <div id="chicago">
-        <img id="london" src="CULT.gif">
-      </div>
-    </div>
-  </div>
-  <div id="paris">
-    <p.> &copy 2024 CULT</p>
-  </div>
-  <style>
-    #phoenix {
-      user-select: none;
-      -webkit-user-select: none;
-      -khtml-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      pointer-events: none;
-      background-size: cover;
-      background-image: url("CULT.webp");
-      position: center;
-      height: 100%;
-    }
+    <img id="middle" class="gif" src="CULT.gif">
+    <img id="top-left" class="gif" src="CULT2.gif">
+    <img id="bottom-right" class="gif" src="CULT3.gif">
 
-    #seattle {
-      overflow: hidden;
-      margin: 0;
-      height: 100%;
-      color: white;
-      background-color: black;
-      user-select: none;
-      -webkit-user-select: none;
-    }
-
-    #london {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: auto;
-      margin-bottom: auto;
-      height: 40vh;
-    }
-
-    #chicago {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      display: flex;
-      opacity: 10%;
-    }
-
-    #paris {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      text-align: center;
-      color: rgb(255, 255, 255, 0.21);
-      font-size: 15px;
-      font-weight: bold;
-      padding-bottom: 1em;
-      font-family: 'Helvetica', 'Arial', sans-serif;
-    }
-  </style>
 </body>
-
 </html>
