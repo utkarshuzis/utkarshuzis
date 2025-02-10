@@ -1,0 +1,32 @@
+body {
+    background-color: black;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Positioning the GIFs */
+.gif {
+    position: absolute;
+    width: 20vw; /* Adjust size based on viewport width */
+    max-width: 200px; /* Prevents it from getting too large */
+    height: auto;
+}
+
+/* Middle */
+#middle {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Top-left */
+#top-left {
+    top: 5%;
+    left: 5%;
+}
+
+/* Bottom-right */
+#bottom-right {
+    bottom: 5%;
+    right: 5%;
+}
